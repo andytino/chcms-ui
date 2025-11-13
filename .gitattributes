@@ -1,0 +1,12 @@
+# Handle line endings
+* text=auto eol=lf
+
+# Treat Markdown files as text
+*.md text diff=markdown
+
+# Exclude docs from language stats (optional)
+docs/* linguist-documentation
+
+# Keep license & changelog as text
+LICENSE text
+CHANGELOG.md text

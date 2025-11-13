@@ -1,0 +1,57 @@
+name: 🐞 Bug report
+description: Report a reproducible issue or error in the system
+title: "[BUG] <short description>"
+labels: [bug]
+assignees: andytino
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out the details below clearly.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Bug summary
+      description: Short description of what went wrong.
+      placeholder: e.g. Cannot fetch posts from WordPress API
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide step-by-step details.
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste any logs or screenshots if available.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Repository affected
+      options:
+        - chcms-frontend-nuxt
+        - chcms-wp-plugins
+        - chcms-docs

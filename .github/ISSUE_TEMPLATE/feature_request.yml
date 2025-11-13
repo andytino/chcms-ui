@@ -1,0 +1,48 @@
+name: ✨ Feature request
+description: Suggest a new idea or enhancement for the system
+title: "[FEATURE] <short description>"
+labels: [enhancement]
+assignees: andytino
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing ideas! Please describe your feature below.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature summary
+      description: What is this feature about?
+      placeholder: e.g. Add cache layer with Redis for Nuxt SSR
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem this feature solves.
+      placeholder: e.g. Improve SSR performance and reduce API load.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed implementation
+      description: Describe how you would like to implement it.
+      placeholder: e.g. Add Redis container and use runtimeConfig in Nuxt.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+      default: 1
