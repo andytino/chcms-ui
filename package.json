@@ -13,17 +13,8 @@
     "lint:fix": "eslint --ext .js,.ts,.vue . --fix"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.vue": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "git add"
+    "**/*.{js,ts,vue}": [
+      "eslint --fix"
     ]
   },
   "dependencies": {
