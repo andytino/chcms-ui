@@ -1,5 +1,5 @@
 {
-  "name": "chcms-frontend-nuxt",
+  "name": "chcms-ui",
   "type": "module",
   "private": true,
   "scripts": {

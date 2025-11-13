@@ -46,8 +46,8 @@ frontend-nuxt/
 
 ```bash
 # Clone and install dependencies
-git clone git@github.com:andytino/chcms-frontend-nuxt.git
-cd chcms-frontend-nuxt
+git clone git@github.com:andytino/chcms-ui.git
+cd chcms-ui
 npm install
 
 # Run in dev mode
