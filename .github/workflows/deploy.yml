@@ -23,6 +23,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Typecheck
+        run: npm nuxt typecheck --if-present
+
+      - name: Lint
+        run: npm run lint --if-present
+
       - name: Build Nuxt app
         run: npm run build
 
